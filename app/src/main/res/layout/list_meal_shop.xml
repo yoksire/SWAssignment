@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/white"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true"
+    app:layout_constraintTop_toTopOf="parent"
+    app:strokeWidth="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="16dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Aruna Mess" />
+
+        <TextView
+            android:id="@+id/tv_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            tools:text="4.2" />
+
+        <ImageView
+            android:id="@+id/iv_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/star"
+            app:layout_constraintBottom_toBottomOf="@id/tv_rating"
+            app:layout_constraintStart_toEndOf="@id/tv_rating"
+            app:layout_constraintTop_toTopOf="@id/tv_rating" />
+
+        <TextView
+            android:id="@+id/tv_time_and_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_star"
+            app:layout_constraintStart_toEndOf="@id/iv_star"
+            app:layout_constraintTop_toTopOf="@id/iv_star"
+            tools:text="19 min | 1.2 km" />
+
+        <TextView
+            android:id="@+id/tv_starts_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_rating"
+            tools:text="Starts from ₹ 99 only" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/arrow_right"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingHorizontal="12dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_starts_from" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

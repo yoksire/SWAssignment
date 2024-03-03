@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="288dp"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/white"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="8dp"
+    app:strokeWidth="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:id="@+id/iv_meal_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/non_veg_logo" />
+
+        <TextView
+            android:id="@+id/tv_meal_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@id/iv_meal_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_meal_type"
+            tools:text="Non Veg Thali" />
+
+        <TextView
+            android:id="@+id/tv_meal_items"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="#959494"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@id/iv_meal_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_meal_name"
+            tools:text="Chicken Masala + 3 Roti" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_meal_items"
+            tools:text="₹ 125" />
+
+        <TextView
+            android:id="@+id/tv_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_price"
+            tools:text="4.7" />
+
+        <ImageView
+            android:id="@+id/iv_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/star"
+            app:layout_constraintBottom_toBottomOf="@id/tv_rating"
+            app:layout_constraintStart_toEndOf="@id/tv_rating"
+            app:layout_constraintTop_toTopOf="@id/tv_rating" />
+
+        <TextView
+            android:id="@+id/tv_review_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_rating"
+            app:layout_constraintStart_toEndOf="@id/iv_star"
+            app:layout_constraintTop_toTopOf="@id/tv_rating"
+            tools:text="(78)" />
+
+        <ImageView
+            android:id="@+id/iv_meal_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/non_veg_thali" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="72dp"
+            android:layout_height="28dp"
+            android:backgroundTint="@color/white"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="2dp"
+            android:text="Add"
+            android:textColor="@color/orange"
+            app:cornerRadius="4dp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_meal_image"
+            app:layout_constraintEnd_toEndOf="@id/iv_meal_image"
+            app:layout_constraintStart_toStartOf="@id/iv_meal_image"
+            app:layout_constraintTop_toBottomOf="@id/iv_meal_image"
+            app:strokeColor="@color/grey"
+            app:strokeWidth="1dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
+
