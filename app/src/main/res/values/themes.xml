@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.SpendWiseAssignment" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorSurfaceContainer">@color/ghost_white</item>
+        <item name="colorOnSecondaryContainer">@color/orange</item>
+        <item name="colorOnSurfaceVariant">@color/black</item>
+        <item name="colorOnSurface">@color/orange</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="BottomNavigationViewTextStyle">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="Theme.SpendWiseAssignment" parent="Base.Theme.SpendWiseAssignment" />
+</resources>
