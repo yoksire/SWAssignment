@@ -19,7 +19,7 @@ object DummyInput {
 
     fun mealShops(): List<Restaurant> = listOf(
         Restaurant(
-            1, "Aruna Mess", 4.2, 19, 1.2, 99, listOf(
+            1, "Manimala Mess", 4.2, 19, 1.2, 99, listOf(
                 Meal(
                     1,
                     "Non Veg Thali",
@@ -91,7 +91,7 @@ object DummyInput {
         ),
 
         Restaurant(
-            3, "Annapurna Mess", 4.2, 19, 1.1, 99, listOf(
+            3, "Annamudi Mess", 4.2, 19, 1.1, 99, listOf(
                 Meal(
                     1,
                     "Non Veg Thali",
@@ -127,7 +127,7 @@ object DummyInput {
         ),
 
         Restaurant(
-            4, "Apurna Mess", 4.5, 18, 1.4, 89, listOf(
+            4, "Minachil Mess", 4.5, 18, 1.4, 89, listOf(
                 Meal(
                     1,
                     "Non Veg Thali",
